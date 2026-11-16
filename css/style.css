@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: #0f1226;
+  color: white;
+  font-family: "Poppins", Arial, sans-serif;
+}
+h1,
+h2,
+.logo {
+  font-family: "Press Start 2P", monospace;
+}
+h1,
+h2 {
+  color: #19e3e3;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 30px;
+  color: white;
+}
+h2 {
+  font-size: 18px;
+}
+
+main {
+  width: 84%;
+  align-items: center;
+  margin: 0 auto;
+}
+section {
+  margin-bottom: 60px;
+}
+
+#home {
+  margin: 30px;
+  padding: 65px;
+  border: 4px solid #19e3e3;
+  text-align: center;
+}
+#sobre p {
+  line-height: 1.8;
+}
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.galeria img {
+    border: 2px solid #5b2bd6;
+}
+.card {
+  border: 2px solid #5b2bd6;
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card,
+footer {
+  background: #191d3a;
+}
+.card-title {
+  color: #19e3e3;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+    color: #19e3e3;
+    font-family: "Press Start 2P";
+}
+
+th,
+td {
+  padding: 14px;
+  border: 1px solid #5b2bd6;
+}
+
+form {
+  max-width: 600px;
+}
+label {
+  display: block;
+}
+textarea {
+  width: 100%;
+  resize: vertical;
+}
+button {
+  padding: 12px 24px;
+  color: #0f1226;
+  background: #ff2ea6;
+}
+button:hover {
+  background: #19e3e3;
+}
+footer {
+  padding: 30px 8%;
+  border-top: 4px solid #5b2bd6;
+}

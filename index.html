@@ -1,29 +1,49 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <title>PixelForge Studio</title>
 </head>
 <body>
     <header>
-        <nav class="menu">
-            <a class="logo" href="#home">PixelForge</a>
-            <div class="links">
-                <a href="#sobre">Sobre</a>
-                <a href="#destaques">Destaques</a>
-                <a href="#galeria">Galeria</a>
-                <a href="#form">Contato</a>
-            </div>
-        </nav>
+        <nav class="navbar sm:navbar-expand bg-1 fg-2">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" aria-hidden="true"></span>
+    </button>
+    <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+      <div class="drawer-header">
+        <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+      </div>
+      <div class="drawer-body">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
+  </div>
+</nav>
 <section id="home">
-  <p class="etiqueta">ESTÚDIO DE JOGOS INDEPENDENTE</p>
   <h1>PixelForge Studio</h1>
-  <h2>Jogos feitos com paixão, para jogar em qualquer tela.</h2>
+  <h2>Jogos feitos com paixão, para jogar em qualquer tela</h2>
 </section>
     </header>
     <main>
@@ -34,29 +54,30 @@
 
       <section id="destaques">
         <h2>Destaques do nosso studio</h2>
-        <div class="cards">
-          <article class="card">
-            <img src="./img/Foto_mulher_dev.webp" alt="Desenvolvedora criando um jogo">
-            <div class="card-text">
-              <h3>Jogue em qualquer tela</h3>
-              <p>Jogos feitos para celular e computador.</p>
-            </div>
-          </article>
-          <article class="card">
-            <img src="./img/Foto_homem_e_mulher.webp" alt="Equipe trabalhando junta em um jogo">
-            <div class="card-text">
-              <h3>Uma equipe criativa</h3>
-              <p>Arte, programação e ideias trabalhando juntas.</p>
-            </div>
-          </article>
-          <article class="card">
-            <img src="./img/Foto_Mulher_codigo.webp" alt="Desenvolvedora programando">
-            <div class="card-text">
-              <h3>Novas ideias sempre</h3>
-              <p>Estamos abertos a parcerias e novos talentos.</p>
-            </div>
-          </article>
-        </div>
+        <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="..." class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">Celular e computador</h5>
+    <p class="card-text fg-2">Jogos que funcionam em Android, iOS e PC.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="..." class="card-img" alt="...">
+    <h5 class="mt-2 mb-0">Equipe completa</h5>
+    <p class="card-text fg-2">Arte, programação, som e design de jogos trabalhando juntos.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <img src="./img/Aperto-de-mao.webp" class="card-img" alt="Imagem pixelada de um aperto de mão">
+    <h5 class="mt-2 mb-0">Portas abertas</h5>
+    <p class="card-text fg-2">Parcerias com publishers e vagas para novos talentos.</p>
+    <small class="fg-3">Last updated 3 mins ago</small>
+  </div>
+</div>
       </section>
         <section id="tabela">
           <table>
@@ -94,7 +115,7 @@
         </section>
         <section id="galeria">
           <h2>Galeria de imagens</h2>
-          <div class="gallery">
+          <div class="galeria">
             <img src="./img/Foto_2_caras.webp" alt="Dois homens no computador trabalhando">
             <img src="./img/Foto_homem_e_mulher.webp" alt="Homem e mulher trabalhando juntos no computador">
             <img src="./img/Foto_Mulher_codigo.webp" alt="Mulher programando no computador">
