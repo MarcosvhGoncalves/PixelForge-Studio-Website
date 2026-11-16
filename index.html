@@ -138,7 +138,7 @@
           </section>
           <section id="form">
             <h2>Formulário de contato</h2>
-            <form method="post">
+            <form method="post" target="_blank">
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
 
@@ -147,9 +147,20 @@
 
                 <label for="telefone">Telefone:</label>
                 <input type="tel" id="telefone" name="telefone" required>
+                <p></p>
+                <select id="assunto" name="assunto" required>
+                  
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="parceria">Parceria</option>
+                <option value="trabalho">Trabalhe conosco</option>
+                <option value="outro">Outros</option>
+              </select>
+              <p></p>
 
                 <label for="mensagem">Mensagem:</label>
                 <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <input type="checkbox" id="termos" name="termos" value="sim"> <label for="privacidade">Aceito a politica de privacidade</label>
 
                 <button type="submit">Enviar</button>
             </form>
